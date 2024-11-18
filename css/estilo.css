@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.8;
+    
+    
+}
+
+header {
+    background: linear-gradient(to right, #ae8847, #f8e6cd, #1f180e);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 0.1%;
+    position: sticky;
+    top: -200px;
+}
+
+header h1 {
+    background: linear-gradient(to right, #1f180e, #ae8847);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul a {
+    background-color: #ae8847;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 13px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(31, 24, 14, 0.5);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+}
+
+header nav ul a:hover {
+    background-color: #1f180e;
+}
+
+section {
+    background-color: #f8e6cd;
+    padding: 20px;
+}
+
+#sobre_mim, #servicos, #galeria, #horarios, #contato {
+    padding: 3%;
+    background-color: #f8e6cd;
+    box-shadow: 4px 4px rgba(31, 24, 14, 0.2);
+}
+
+#sobre_mim h2, #servicos h2, #galeria h2, #horarios h2, #contato h2 {
+    text-align: center;
+    color: #1f180e;
+    font-size: 400%;
+    margin-bottom: 2%;
+}
+
+#sobre_mim h3, #servicos h3, #contato h3{
+    text-align: center;
+    color: #1f180e;
+    font-size: 200%;
+}
+
+#sobre_mim p, #servicos p, #galeria p, #horarios p, #contato p{
+    font-size: 140%;
+}
+#sobre_mim p, #servicos p, #galeria p, #horarios p{
+    text-align: justify;
+}
+#sobre_mim figure{
+    margin-top: 5%;
+    text-align: center;
+}
+
+#sobre_mim figure img{
+    border-radius: 30px;
+    width: 400px;
+}
+
+#galeria{
+
+    text-align: center;
+    
+}
+
+#galeria img 
+    {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 15px 10px rgba(31, 24, 14, 0.2);
+        
+    }
+
+#moldura{
+
+    max-width: 1%;
+    max-height: 1%;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.botao{
+    border-radius: #1f180e;
+    border-radius: 10px;
+    background-color: #ae8847;
+    margin-inline: 20%;
+    padding: 2%;
+}
+
+#horarios ul, #contato ul {
+    list-style: none;
+}
+
+#horarios {
+    text-align: center;
+}
+
+#horarios ul{
+    font-size: 170%;
+    background-color: #ae8847;
+    border-radius: 20px;
+    color: #000000;
+    padding: 1%;
+}
+
+#contato ul {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#contato{
+    border-radius: 30px;
+}
+#contato ul a {
+    display: flex;
+    text-decoration: none;
+    background-color: #ae8847;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#contato ul a:hover{
+    background-color: #1f180e;
+    transform: scale(1.1);
+}
+
+#contato figure iframe{
+    border-radius: 30px;
+    margin-top: 1%;
+}
+
+#contato h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+footer {
+    background-color: #ae8847;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 4px 10px rgba(31, 24, 14, 0.2);
+    margin-top: 0.3%;
+}
+
+footer p:last-child{
+    margin-top: 2%;
+}
+
+
+/* Responsivo para telas de até 805px */
+@media (max-width: 805px) {
+    body {
+        font-size: 90%;
+    }
+
+    header {
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 7%;
+        position: static;
+        top: 0;
+    }
+
+    header h1 {
+        font-size: 50px;
+        margin-top: 8%;
+    }
+
+    header nav ul {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    header nav ul a {
+        font-size: 18px; 
+        padding: 8px 15px;
+    }
+
+    #sobre_mim, #servicos, #galeria, #horarios, #contato {
+        padding: 5%;
+    }
+
+    #sobre_mim h2, #servicos h2, #galeria h2, #horarios h2, #contato h2 {
+        font-size: 200%; 
+    }
+
+    #sobre_mim h3, #servicos h3, #contato h3 {
+        font-size: 150%; 
+    }
+
+    #sobre_mim p, #servicos p, #galeria p, #horarios p, #contato p {
+        font-size: 120%; 
+    }
+
+    #sobre_mim figure img {
+        width: 100%; 
+        max-width: 300px; 
+        margin: 0 auto; 
+    }
+
+    #galeria img {
+        width: 100%; 
+        max-width: 300px;
+    }
+
+    #galeria figure {
+        margin: 10px auto; 
+    }
+
+    #horarios ul {
+        font-size: 140%;
+    }
+
+    #contato ul {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 14px; 
+    }
+
+    footer p:last-child {
+        margin-top: 10px;
+    }
+
+    footer iframe{
+        width: 100%;
+    }
+}
+
+
+/* Responsivo para telas de até 586px */
+@media (max-width: 586px) {
+    header {
+        padding: 10px;
+        position: static;
+        top: 0;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header nav ul {
+        gap: 10px; 
+    }
+
+    header nav ul a {
+        font-size: 16px; 
+        padding: 5px 10px;
+    }
+
+    #sobre_mim, #servicos, #galeria, #horarios, #contato {
+        padding: 10px; 
+    }
+
+    #sobre_mim h2, #servicos h2, #galeria h2, #horarios h2, #contato h2 {
+        font-size: 150%; 
+    }
+
+    #sobre_mim h3, #servicos h3, #contato h3 {
+        font-size: 130%; 
+    }
+
+    #sobre_mim p, #servicos p, #galeria p, #horarios p, #contato p {
+        font-size: 100%; 
+    }
+
+    #sobre_mim figure img {
+        max-width: 200px; 
+    }
+
+    #galeria figure {
+    
+        margin: 10px auto;
+    }
+
+    #galeria img {
+        width: 100%; 
+    }
+
+    #horarios ul {
+        font-size: 120%;
+        padding: 5px; 
+    }
+
+    #contato ul {
+        gap: 10px; 
+    }
+
+    #contato ul a {
+        font-size: 14px; 
+        padding: 8px 12px; 
+    }
+
+    #contato figure iframe {
+        width: 100%; 
+        height: 250px; 
+    }
+
+    footer {
+        font-size: 12px; 
+        padding: 10px;
+    }
+}
+
+/* Responsivo para telas de até 423px */
+@media (max-width: 423px) {
+    body {
+        font-size: 70%; 
+    }
+
+    header{
+
+        position: static;
+        top: 0;
+    }
+
+    header h1 {
+        font-size: 28px; 
+
+    header nav ul {
+        flex-direction: column; 
+        gap: 5px; 
+    }
+
+    header nav ul a {
+        font-size: 14px;
+        padding: 5px 10px; 
+    }
+
+    #sobre_mim, #servicos, #galeria, #horarios, #contato {
+        padding: 5%; 
+    }
+
+    #sobre_mim h2, #servicos h2, #galeria h2, #horarios h2, #contato h2 {
+        font-size: 130%; 
+    }
+
+    #sobre_mim h3, #servicos h3, #contato h3 {
+        font-size: 110%; 
+    }
+
+    #sobre_mim figure img {
+        max-width: 100%; 
+        width: auto;
+    }
+
+    #galeria img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+    #galeria figure {
+        margin: 5px auto; 
+
+    #horarios ul {
+        font-size: 100%; 
+        padding: 8px;
+    }
+
+    #contato ul {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    #contato ul a {
+        font-size: 12px; 
+        padding: 5px 10px; 
+    }
+
+    #contato figure iframe {
+        width: 100%; 
+        height: 250px; 
+    }
+
+    footer {
+        font-size: 10px; 
+        padding: 8px; 
+    }
+    }
+}
+}
